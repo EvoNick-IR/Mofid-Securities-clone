@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { next, prev, slides, boxTitles } from "./services";
 
 const Slider = () => {

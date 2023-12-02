@@ -1,4 +1,4 @@
-import React from "react";
+
 import { logo, rainbow, phone, SearchIcon, navItem } from "./services";
 
 const Header = () => {

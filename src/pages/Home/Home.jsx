@@ -1,4 +1,3 @@
-import React from "react";
 import { Slider, Info, News } from "./Services";
 
 const Home = () => {
