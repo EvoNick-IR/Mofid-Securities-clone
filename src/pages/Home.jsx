@@ -4,8 +4,11 @@ import Slider from "../components/Slider";
 const Home = () => {
   return (
     <main className="">
-      <div className="w-[100%] m-auto ">
+      <div id="carousel" className="w-[100%] m-auto ">
         <Slider />
+        <section className="w-[90%] flex justify-between bg-slate-500 mx-auto h-[700px]">
+         <in
+        </section>
       </div>
     </main>
   );

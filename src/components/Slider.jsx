@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import next from "../assets/slider/next-slide.svg";
-import perv from "../assets/slider/previous-slide.svg";
+import next from "../assets/icon/next.svg";
+import prev from "../assets/icon/prev.svg";
 import pic1 from "../assets/slider/pic1.jpg";
 import pic2 from "../assets/slider/pic2.jpg";
 import pic3 from "../assets/slider/pic3.jpg";
@@ -63,7 +63,7 @@ const Slider = () => {
   return (
     <div className="overflow-hidden flex flex-col justify-center relative items-center">
       <div
-        className="flex transition ease-out duration-40"
+        className="flex transition ease-out duration-500"
         style={{ transform: `translateX(${pos * 100}%)` }}
       >
         {slides.map((s, i) => {
@@ -94,7 +94,7 @@ const Slider = () => {
           </div>
           <div className="flex justify-center items-center">
             <img
-              src={perv}
+              src={prev}
               alt=""
               className="w-[100%] shadow-md cursor-pointer"
               onClick={leftBtn}

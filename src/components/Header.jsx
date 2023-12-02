@@ -1,8 +1,8 @@
 import React from "react";
-import logo from "../assets/logo.svg";
-import rainbow from "../assets/rainbow.svg";
-import phone from "../assets/phone.svg";
-import SearchIcon from "../assets/search.svg";
+import logo from "../assets/icon/logo.svg";
+import rainbow from "../assets/icon/rainbow.svg";
+import phone from "../assets/icon/phone.svg";
+import SearchIcon from "../assets/icon/search.svg";
 
 const Header = () => {
   const navItem = [
