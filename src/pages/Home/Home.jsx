@@ -1,7 +1,5 @@
 import React from "react";
-import Slider from "../../components/Slider/Slider";
-import Info from "../../components/Info/Info";
-import News from "../../components/News/News";
+import { Slider, Info, News } from "./Services";
 
 const Home = () => {
   return (
@@ -10,7 +8,7 @@ const Home = () => {
         <Slider />
         <section className="w-[90%] flex justify-between bg-slate-500 mx-auto h-[700px]">
           <Info />
-          <News/>
+          <News />
         </section>
       </div>
     </main>

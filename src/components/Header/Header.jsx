@@ -1,17 +1,7 @@
 import React from "react";
-import logo from "../assets/icon/logo.svg";
-import rainbow from "../assets/icon/rainbow.svg";
-import phone from "../assets/icon/phone.svg";
-import SearchIcon from "../assets/icon/search.svg";
+import { logo, rainbow, phone, SearchIcon, navItem } from "./services";
 
 const Header = () => {
-  const navItem = [
-    "سرمایه گذاری",
-    "معاملات آنلاین",
-    "آموزش مفید",
-    "درباره مفید",
-    "شعب و دفاتر",
-  ];
   return (
     <header className="flex ismed text-[#EAEEF0] px-8 py-6 absolute top-0 w-[100vw] text-[14px] z-10 from-[rgba(10,10,10,0.8)] bg-gradient-to-b">
       <nav className="flex justify-between flex-1">
