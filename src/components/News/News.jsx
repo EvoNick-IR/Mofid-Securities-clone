@@ -1,8 +1,8 @@
 import { newsData, arrowLeft } from "./services";
 const News = () => {
   return (
-    <div className=" w-[480px] flex flex-col gap-4 justify-start pt-[28px] relative ">
-      <h2 className="absolute -top-6 right-0">آخرین خبرها</h2>
+    <div className=" col-span-4 flex flex-col gap-4 justify-start  relative ">
+      <h2 className="absolute -top-10 right-0">آخرین خبرها</h2>
       {newsData.map((news) => {
         return (
           <a href="_self" key={"news" + news.id}>
