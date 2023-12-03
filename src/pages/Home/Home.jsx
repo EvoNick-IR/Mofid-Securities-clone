@@ -2,15 +2,15 @@ import { Slider, Info, News } from "./Services";
 
 const Home = () => {
   return (
-    <main className="">
-      <div id="carousel" className="w-[100%] m-auto ">
+    <div className="">
+      <div id="carousel" className="w-full m-auto ">
         <Slider />
-        <section className="w-[90%] flex justify-between bg-slate-500 mx-auto h-[700px]">
-          <Info />
-          <News />
-        </section>
       </div>
-    </main>
+      <section className="w-[1140px] flex justify-between mt-10 mx-auto">
+        <Info />
+        <News />
+      </section>
+    </div>
   );
 };
 

@@ -67,14 +67,14 @@ const Slider = () => {
           </div>
         </div>
       </div>
-      <div className="w-full flex justify-center h-4 py-4 gap-2 items-center">
+      <div className="w-full flex justify-center h-4 py-4 gap-2 items-center z-10">
         {slides.map((s, i) => {
           return (
             <div
               key={"bullet" + i}
               className={`${
                 i === pos ? "w-4 bg-[#004b69]" : "w-1 bg-[#11a699]"
-              } h-1 bg-white rounded-full`}
+              } h-1 rounded-full`}
             ></div>
           );
         })}

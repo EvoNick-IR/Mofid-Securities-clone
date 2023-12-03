@@ -1,4 +1,3 @@
-
 import chatIcon from "../../assets/icon/chatIcon.svg";
 const ChatIcon = () => {
   return (
