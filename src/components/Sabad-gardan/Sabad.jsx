@@ -1,4 +1,4 @@
-import Button_bg from "../Button/Button_bg";
+import Button_blue from "../Buttons/Button_blue";
 
 const Sabad = () => {
   return (
@@ -14,11 +14,11 @@ const Sabad = () => {
         هستند.
       </p>
       <div className="">
-        {/* <Button_bg
+        <Button_blue
           title="مشاوره رایگان سرمایه گذاری"
           bg="#004B69"
           color="white"
-        /> */}
+        />
       </div>
     </div>
   );

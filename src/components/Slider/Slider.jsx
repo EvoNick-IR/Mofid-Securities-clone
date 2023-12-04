@@ -1,6 +1,5 @@
 import { useEffect, useState, memo } from "react";
 import { next, prev, slides, boxTitles } from "./services";
-import Button_bg from "../Button/Button_bg";
 
 const Slider = () => {
   const [pos, setpos] = useState(0);
@@ -45,13 +44,9 @@ const Slider = () => {
             {titles.title}
           </h3>
           <p className="text-sm islight leading-relaxed">{titles.p}</p>
-
-          <Button_bg
-            title={titles.bott}
-            bg="#004B69"
-            hover="#00243C"
-            color="white"
-          />
+          <div className="text-white flex justify-center p-3 ismed text-sm bg-[#004B69] rounded-md transition-all duration-300 cursor-pointer hover:bg-[#00243C]">
+            <button type="Button">{titles.bott}</button>
+          </div>
         </div>
         <div className="flex justify-end items-end gap-4">
           <div className="flex justify-center items-center ">
