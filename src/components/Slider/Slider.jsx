@@ -1,5 +1,6 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, memo } from "react";
 import { next, prev, slides, boxTitles } from "./services";
+import Button_bg from "../Button/Button_bg";
 
 const Slider = () => {
   const [pos, setpos] = useState(0);
@@ -39,14 +40,18 @@ const Slider = () => {
         id="sliderMidContainer"
         className="w-[82%] flex absolute top-[30%] h-[50%] justify-between"
       >
-        <div className="bg-white gap-4 flex items-end flex-col  p-8 rounded-md shadow-md max-w-[536px] w-full md:w-[504px] md:h-[242px] xl:mx-0 xl:w-[270px] xl:h-auto xl:items-start ">
+        <div className="bg-white gap-4 flex justify-end flex-col  p-8 rounded-md shadow-md max-w-[536px] w-full md:w-[504px] md:h-[242px] xl:mx-0 xl:w-[270px] xl:h-auto xl:items-start ">
           <h3 className="ismed text-2xl text-[#004B69] leading-relaxed ">
             {titles.title}
           </h3>
           <p className="text-sm islight leading-relaxed">{titles.p}</p>
-          <span className="ismed text-sm px-4 py-3 bg-[#004B69] rounded-md text-white hover:bg-[#00243C] ease-out cursor-pointer transition-all">
-            {titles.bott}
-          </span>
+
+          <Button_bg
+            title={titles.bott}
+            bg="#004B69"
+            hover="#00243C"
+            color="white"
+          />
         </div>
         <div className="flex justify-end items-end gap-4">
           <div className="flex justify-center items-center ">
@@ -83,4 +88,4 @@ const Slider = () => {
   );
 };
 
-export default Slider;
+export default memo(Slider);
