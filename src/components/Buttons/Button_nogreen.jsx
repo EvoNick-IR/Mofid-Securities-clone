@@ -1,4 +1,5 @@
 import { useEffect, useState, memo } from "react";
+import { arrowLeft } from "../News/services";
 
 const Button_bg = (props) => {
   const { title } = props;
@@ -8,8 +9,9 @@ const Button_bg = (props) => {
     setBtnTitle(title);
   }, [title]);
   return (
-    <div className="text-[#00A796] flex justify-center p-3 ismed text-sm border-solid border-[1px]  border-[#00A796]  transition-all duration-300 cursor-pointer rounded-md hover:opacity-80">
+    <div className="text-[#00A796] gap-3  flex justify-center py-3 px-8 items-center ismed text-sm border-solid border-[1px]  border-[#00A796]  transition-all duration-300 cursor-pointer rounded-md hover:bg-[#D0D8DD]">
       <button type="button">{btnTitle}</button>
+      <img src={arrowLeft} alt="" className="w-4 " />
     </div>
   );
 };
