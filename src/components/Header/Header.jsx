@@ -1,21 +1,20 @@
-
 import { logo, rainbow, phone, SearchIcon, navItem } from "./services";
 
 const Header = () => {
   return (
-    <header className="flex ismed text-[#EAEEF0] px-8 py-6 absolute top-0 w-[100vw] text-[14px] z-10 from-[rgba(10,10,10,0.8)] bg-gradient-to-b">
+    <header className="flex ismed text-[#EAEEF0] px-8 py-6 absolute top-0 w-full text-[14px] z-10 from-[rgba(10,10,10,0.8)] bg-gradient-to-b">
       <nav className="flex justify-between flex-1">
         <div className="flex gap-10">
           <img className="w-[150px]" src={logo} alt="LOGO" />
           <ul className="flex gap-6 items-center">
             {navItem.map((item, i) => {
               return (
-                <li key={i} className="cursor-pointer">
+                <li key={i} className="cursor-pointer hover:text-slate-300">
                   {item}
                 </li>
               );
             })}
-            <li className="flex justify-center cursor-pointer whitespace-nowrap items-center gap-3 mr-3">
+            <li className="flex justify-center cursor-pointer whitespace-nowrap items-center gap-3 mr-3 hover:text-slate-300">
               <img src={rainbow} alt="" />
               ایزی تریدر
             </li>

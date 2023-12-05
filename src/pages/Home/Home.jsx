@@ -1,10 +1,10 @@
-import Mazaya from "../../components/Mazaya/Mazaya";
-import Sabad from "../../components/Sabad-gardan/Sabad";
-import { Slider, Info, News } from "./Services";
+import Amoozesh from "../../components/Amoozesh/Amoozesh";
+import EasyTrade from "../../components/EasyTrade/EasyTrade";
+import { Slider, Info, News, Sabad, Mazaya, Khadamat } from "./Services";
 
 const Home = () => {
   return (
-    <div className="">
+    <div className="ismed">
       <div id="carousel" className="w-full m-auto  ">
         <Slider />
       </div>
@@ -16,8 +16,12 @@ const Home = () => {
         <Sabad />
         <Mazaya />
       </section>
-      <section className=" w-full flex flex-col items-center justify-center mt-[128px] mx-auto bg-[#00243C] ">
-        
+      <section className="w-full flex flex-col items-center p-16 justify-center mt-[128px] bg-[#00243C] ">
+        <Khadamat />
+        <EasyTrade />
+      </section>
+      <section className="w-full flex flex-col items-center p-16  justify-center mt-[64px]">
+        <Amoozesh />
       </section>
     </div>
   );

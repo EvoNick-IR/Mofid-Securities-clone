@@ -2,7 +2,9 @@ import { newsData, arrowLeft } from "./services";
 const News = () => {
   return (
     <div className=" col-span-4 flex flex-col gap-4 justify-start  relative ">
-      <h2 className="absolute -top-10 right-0">آخرین خبرها</h2>
+      <h2 className="absolute -top-12 right-0 text-slate-400 text-lg">
+        آخرین خبرها
+      </h2>
       {newsData.map((news) => {
         return (
           <a href="_self" key={"news" + news.id}>
