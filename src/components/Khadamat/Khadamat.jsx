@@ -1,5 +1,5 @@
 import { Button_green, Button_nogreen, cardData } from "./services";
-import Card from "./card";
+import Card from "./Card";
 
 const Khadamat = () => {
   return (
