@@ -1,4 +1,4 @@
-import chatIcon from "../../assets/icon/chatIcon.svg";
+import { chatIcon } from "./services";
 const ChatIcon = () => {
   return (
     <div className="group flex justify-center items-center p-4 z-10  fixed right-1 bottom-1 ">

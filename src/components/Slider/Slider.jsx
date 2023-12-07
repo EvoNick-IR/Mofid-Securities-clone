@@ -32,7 +32,7 @@ const Slider = () => {
         style={{ transform: `translateX(${pos * 100}%)` }}
       >
         {slides.map((s, i) => {
-          return <img src={s} key={i} />;
+          return <img src={s} key={"sliderImg" + i} />;
         })}
       </div>
       <div

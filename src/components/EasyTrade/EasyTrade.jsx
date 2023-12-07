@@ -1,5 +1,10 @@
-import Button_nogreen from "../Buttons/Button_nogreen";
-import { easyTrade, rainbow_larg, hami, karmozd } from "./services";
+import {
+  easyTrade,
+  rainbow_larg,
+  hami,
+  karmozd,
+  Button_nogreen,
+} from "./services";
 
 const EasyTrade = () => {
   return (

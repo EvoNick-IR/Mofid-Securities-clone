@@ -1,9 +1,10 @@
 import next from "../../assets/icon/next.svg";
 import prev from "../../assets/icon/prev.svg";
-import pic1 from "../../assets/img/slider/pic1.jpg";
-import pic2 from "../../assets/img/slider/pic2.jpg";
-import pic3 from "../../assets/img/slider/pic3.jpg";
-import pic4 from "../../assets/img/slider/pic4.jpg";
+
+let pic1 = "/img/slider/pic1.jpg";
+let pic2 = "/img/slider/pic2.jpg";
+let pic3 = "/img/slider/pic3.jpg";
+let pic4 = "/img/slider/pic4.jpg";
 
 const slides = [pic1, pic2, pic3, pic4];
 

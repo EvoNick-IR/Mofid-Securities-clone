@@ -1,6 +1,13 @@
-import Amoozesh from "../../components/Amoozesh/Amoozesh";
-import EasyTrade from "../../components/EasyTrade/EasyTrade";
-import { Slider, Info, News, Sabad, Mazaya, Khadamat } from "./Services";
+import {
+  Slider,
+  Info,
+  News,
+  Sabad,
+  Mazaya,
+  Khadamat,
+  Amoozesh,
+  EasyTrade,
+} from "./Services";
 
 const Home = () => {
   return (

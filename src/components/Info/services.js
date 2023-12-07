@@ -14,5 +14,4 @@ const infoData = [
   { id: 6, icon: money, title: "مفید کارت، دسترسی آنی به موجودی حامی" },
 ];
 
-
-export{infoData}
+export { infoData };

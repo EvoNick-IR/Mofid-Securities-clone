@@ -1,4 +1,4 @@
-import Button_noblue from "../Buttons/Button_noblue";
+import { Button_noblue } from "./services";
 import Days from "./Days";
 
 const Classes = () => {
