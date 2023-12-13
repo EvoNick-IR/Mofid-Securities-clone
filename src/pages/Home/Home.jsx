@@ -15,7 +15,7 @@ const Home = () => {
       <div id="carousel" className="w-full m-auto  ">
         <Slider />
       </div>
-      <section className="max-w-[1140px] w-[90%] flex flex-wrap gap-24 mt-[64px] mx-auto ">
+      <section className="max-w-[1140px] w-[90%] flex flex-wrap gap-24 mt-12 md:mt-1 mx-auto  xl:mt-32">
         <Info />
         <News />
       </section>
