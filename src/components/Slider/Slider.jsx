@@ -27,7 +27,7 @@ const Slider = () => {
   }, [pos]);
   return (
     <div className="relative">
-      <div className="overflow-hidden flex flex-col justify-center items-center">
+      <div className="overflow-hidden flex flex-col justify-center items-center relative">
         <div
           className="flex transition ease-out duration-500 h-[calc(75vw)] lg:h-[calc(42vw)] "
           style={{ transform: `translateX(${pos * 100}%)` }}
@@ -42,9 +42,9 @@ const Slider = () => {
             );
           })}
         </div>
-        <div className="py-8 w-full  z-20 -mt-12 ">
-          <div className="bg-white gap-4 flex mx-auto text-center justify-end flex-col w-[90%]  p-4 rounded-md shadow-md max-w-[536px]  md:w-[504px] md:h-[242px] xl:mx-0 xl:w-[270px] xl:h-auto xl:items-start ">
-            <div className="w-full flex justify-center h-4 py-4 gap-2 items-center ">
+        <div className="py-8 w-full  z-20 -mt-12 md:-mt-28 ">
+          <div className="bg-white gap-4 items-center relative flex mx-auto text-center flex-col w-[90%]  p-4 rounded-md shadow-md max-w-[536px]  md:w-[504px] md:h-[242px]  xl:w-[270px] xl:h-auto xl:min-h-[250px] xl:items-start xl:justify-end xl:text-start xl:absolute xl:bottom-16 xl:right-36 xl:p-10  ">
+            <div className="w-full md:hidden flex justify-center h-4 py-4 gap-2 items-center ">
               {slides.map((s, i) => {
                 return (
                   <div
@@ -60,32 +60,31 @@ const Slider = () => {
               {titles.title}
             </h3>
             <p className="text-sm islight leading-relaxed">{titles.p}</p>
-            <div className="text-white flex justify-center p-3 ismed text-sm bg-[#004B69] rounded-md transition-all duration-300 cursor-pointer hover:bg-[#00243C]">
-              <button type="Button">{titles.bott}</button>
+            <div className="text-white flex justify-center items-center gap-2 p-3 w-fit ismed text-sm bg-[#004B69] rounded-md transition-all duration-300 cursor-pointer hover:bg-[#00243C]">
+              <button type="Button" className="block">
+                {titles.bott}
+              </button>
+            </div>
+            <div className="w-full hidden md:mb-2 md:flex xl:hidden justify-center h-4 py-4 gap-2 items-center ">
+              {slides.map((s, i) => {
+                return (
+                  <div
+                    key={"bullet" + i}
+                    className={`${
+                      i === pos ? "w-4 bg-[#004b69]" : "w-1 bg-[#11a699]"
+                    } h-1 rounded-full`}
+                  ></div>
+                );
+              })}
+            </div>
+            <div className="hidden bg-transparent absolute md:flex md:justify-between md:w-[130%] xl:bottom-0 xl:w-32 xl:right-[900px]">
+              <img src={next} alt="" className="w-12" onClick={rightBtn} />
+              <img src={prev} alt="" className="w-12" onClick={leftBtn} />
             </div>
           </div>
         </div>
-
-        <div className="justify-end items-end gap-4 hidden md:flex">
-          <div className="flex justify-center items-center ">
-            <img
-              src={next}
-              alt=""
-              className="w-[100%] shadow-md cursor-pointer"
-              onClick={rightBtn}
-            />
-          </div>
-          <div className="flex justify-center items-center">
-            <img
-              src={prev}
-              alt=""
-              className="w-[100%] shadow-md cursor-pointer"
-              onClick={leftBtn}
-            />
-          </div>
-        </div>
       </div>
-      <div className="w-full hidden lg:flex justify-center h-4 py-4 gap-2 items-center z-10 absolute -bottom-8">
+      <div className="w-full hidden xl:flex justify-center h-4 py-4 gap-2 items-center z-10 absolute -bottom-8">
         {slides.map((s, i) => {
           return (
             <div
