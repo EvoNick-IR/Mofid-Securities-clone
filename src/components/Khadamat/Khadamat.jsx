@@ -3,8 +3,8 @@ import Card from "./Card";
 
 const Khadamat = () => {
   return (
-    <div className=" isreg text-slate-300 text-base mt-10 lg:flex lg:flex-nowrap lg:w-full xl:grid xl:grid-cols-5 mx-auto">
-      <div className=" bg-transparent flex flex-col w-2/5 gap-6 md:p-10 md:text-center xl:col-span- lg:text-right ">
+    <div className=" isreg text-slate-300 text-base mt-10 lg:flex lg:flex-nowrap lg:w-full xl:grid xl:grid-cols-12 mx-auto">
+      <div className=" bg-red-500 flex flex-col w-2/5 gap-6 md:p-10 md:text-center xl:col-span-5 lg:text-right ">
         <h2 className="ismed text-white text-lg lg:text-2xl">
           خدمات معاملات آنلاین
         </h2>
@@ -24,7 +24,7 @@ const Khadamat = () => {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-2 gap-6 md:grid-cols-3 w-[90%] mx-auto text-center mt-20 lg:mt-6 lg:w-[55%] xl:col-span-3 ">
+      <div className="grid grid-cols-2 gap-6 md:grid-cols-3 w-[90%] mx-auto text-center mt-20 lg:mt-6 lg:w-[55%] xl:col-span-6 ">
         {cardData.map((item) => {
           return (
             <div key={"card" + item.id} className="col-span-1 mx-auto">
