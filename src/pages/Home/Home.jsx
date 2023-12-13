@@ -11,15 +11,15 @@ import {
 
 const Home = () => {
   return (
-    <div className="ismed">
+    <div className="ismed box-border w-full">
       <div id="carousel" className="w-full m-auto  ">
         <Slider />
       </div>
-      <section className="max-w-[1140px] w-[90%] grid grid-cols-9 gap-x-20 mt-[64px] mx-auto ">
+      <section className="max-w-[1140px] w-[90%] flex flex-wrap gap-24 mt-[64px] mx-auto ">
         <Info />
         <News />
       </section>
-      <section className="max-w-[1140px] w-[90%] grid grid-cols-9 gap-x-20 mt-[128px] mx-auto  ">
+      <section className="max-w-[1140px] w-[90%] flex flex-wrap gap-x-20 mt-[128px] mx-auto  ">
         <Sabad />
         <Mazaya />
       </section>

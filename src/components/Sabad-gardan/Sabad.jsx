@@ -1,8 +1,8 @@
-import {Button_blue,Button_noblue} from "./services"
+import { Button_blue, Button_noblue } from "./services";
 
 const Sabad = () => {
   return (
-    <div className="col-span-5 gap-6 flex flex-col items-start text-[#444954]">
+    <div className="w-6/12 gap-6 flex flex-col items-start text-[#444954]">
       <h2 className="ismed text-3xl">سبدگردان مفید</h2>
       <h3 className="ismed text-xl ">آینده در گرو تصمیمات امروز شماست</h3>
       <p className="ismed text-lg text-gray-500">

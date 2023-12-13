@@ -3,7 +3,7 @@ import Days from "./Days";
 
 const Classes = () => {
   return (
-    <div className="bg-[#F8F9FA]  w-[1140px] flex flex-nowrap justify-between rounded-md p-8 text-slate-800">
+    <div className="bg-[#F8F9FA] w-full flex flex-nowrap justify-between rounded-md p-8 text-slate-800">
       <div className="flex flex-col items-start w-4/12 pl-6 gap-10 ">
         <div className="flex flex-col gap-10">
           <h2 className="isbold text-2xl">کلاس‌های آموزشی روزانه رایگان</h2>

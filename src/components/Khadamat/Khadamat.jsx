@@ -3,10 +3,10 @@ import Card from "./Card";
 
 const Khadamat = () => {
   return (
-    <div className="max-w-[1140px]">
-      <div className=" isreg text-slate-300 text-base mt-[64px] flex justify-between">
-        <div className="w-1/2 bg-transparent flex flex-col gap-6">
-          <h2 className="ismed text-white text-4xl">خدمات معاملات آنلاین</h2>
+    <div className="max-w-[1140px] ">
+      <div className=" isreg text-slate-300 text-base mt-14 flex flex-wrap justify-between">
+        <div className=" bg-transparent flex flex-col gap-6">
+          <h2 className="ismed text-white text-lg">خدمات معاملات آنلاین</h2>
           <h3>معاملات اوراق بهادار</h3>
           <p className="text-sm isreg">
             اگر علاقه‌مند به فعالیت و خرید و فروش سهام در بازار سرمایه هستید،
@@ -19,7 +19,7 @@ const Khadamat = () => {
             <Button_nogreen title="اطلاعات بیشتر" />
           </div>
         </div>
-        <div className="w-1/2 grid grid-cols-3 gap-6 grid-rows-2  text-center">
+        <div className="flex flex-wrap gap-[4%] text-center">
           {cardData.map((item) => {
             return (
               <div key={"card" + item.id} className="col-span-1 ">
