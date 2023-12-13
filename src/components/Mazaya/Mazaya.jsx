@@ -7,7 +7,7 @@ const Mazaya = () => {
     setMazData(data);
   }, [data]);
   return (
-    <div className="col-span-4 bg-[#F8F9FA] p-6 rounded-md flex flex-col gap-10 justify-start ">
+    <div className="w-5/12 bg-[#F8F9FA] p-6 rounded-md flex flex-col gap-10 justify-start ">
       <h3 className="ismed text-xl text-[#444954]">
         مزایای صندوق‌های سرمایه‌گذاری
       </h3>

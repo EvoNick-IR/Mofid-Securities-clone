@@ -1,12 +1,12 @@
 import { infoData } from "./services";
 const Info = () => {
   return (
-    <div className="grid grid-cols-3 col-span-5 gap-4">
+    <div className="w-full xl:w-6/12 grid grid-cols-2 sm:grid-cols-3 gap-4 ">
       {infoData.map((data) => {
         return (
           <div
             key={"info" + data.id}
-            className="rounded-md p-1 bg-[#F8F9FA] flex justify-center"
+            className="rounded-md p-1 bg-[#F8F9FA] flex justify-center col-span-1 "
           >
             <div className="flex pt-4 ">
               <div className="flex flex-col  justify-start items-center px-2 py-4   ">

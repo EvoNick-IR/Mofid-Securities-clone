@@ -1,7 +1,7 @@
 const Card = (props) => {
   const item = props.data;
   return (
-    <div className="flex flex-col gap-3 items-center justify-start bg-[#052840] h-[170px] p-2 max-w-[160px] min-w-[150px] rounded-md">
+    <div className="flex flex-col gap-3 items-center justify-start bg-[#052840] h-[170px] p-2 w-36 rounded-md">
       <div className=" flex justify-center rounded-full w-20 h-20 bg-[#00334D]">
         <img src={item.pic} alt={item.title} className="w-8" />
       </div>
