@@ -33,7 +33,7 @@ const News = () => {
         );
       })}
       <a href="_self">
-        <div className="flex gap-4 pr-4 ismed text-sm mt-4 text-[#004C6A]">
+        <div className="flex gap-4 pr-4 ismed text-xs md:text-sm mt-4 text-[#004C6A]">
           <span className="">مشاهده همه خبرها</span>
           <img src={arrowLeft} alt="" />
         </div>
