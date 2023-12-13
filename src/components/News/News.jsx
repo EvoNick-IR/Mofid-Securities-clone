@@ -22,8 +22,8 @@ const News = () => {
                 />
               </div>
 
-              <div className="flex flex-col max-w-[300px] justify-between">
-                <h3 className="isreg text-xs xl:text-base">{news.title}</h3>
+              <div className="flex flex-col  justify-between">
+                <h3 className="isreg text-xs  lg:text-base">{news.title}</h3>
                 <span className="ismed text-[10px] xl:text-xs text-gray-400">
                   {news.time}
                 </span>

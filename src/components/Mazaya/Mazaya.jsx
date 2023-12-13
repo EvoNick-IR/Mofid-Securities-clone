@@ -7,8 +7,8 @@ const Mazaya = () => {
     setMazData(data);
   }, [data]);
   return (
-    <div className="w-5/12 bg-[#F8F9FA] p-6 rounded-md flex flex-col gap-10 justify-start ">
-      <h3 className="ismed text-xl text-[#444954]">
+    <div className="w-full bg-[#F8F9FA] p-6 rounded-md flex flex-col gap-10 justify-start ">
+      <h3 className="ismed text-xl lg:text-2xl text-[#444954]">
         مزایای صندوق‌های سرمایه‌گذاری
       </h3>
       <div className="flex flex-col gap-5">
@@ -22,8 +22,10 @@ const Mazaya = () => {
                 <div className="w-[2px] bg-[#00243C] hidden"></div>
               </div>
               <div className=" ">
-                <h4 className="text-base ismed text-[#004B69]">{item.title}</h4>
-                <p className="text-xs text-[#717888]">{item.para}</p>
+                <h4 className="text-base lg:text-lg ismed text-[#004B69]">
+                  {item.title}
+                </h4>
+                <p className="text-xs lg:text-sm text-[#717888]">{item.para}</p>
               </div>
             </div>
           );
