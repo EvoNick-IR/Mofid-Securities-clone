@@ -1,7 +1,7 @@
 import { infoData } from "./services";
 const Info = () => {
   return (
-    <div className="w-full xl:w-6/12 grid grid-cols-2 sm:grid-cols-3 gap-4 ">
+    <div className="w-full xl:w-6/12 grid grid-cols-2 sm:grid-cols-3  gap-4 ">
       {infoData.map((data) => {
         return (
           <div

@@ -29,7 +29,7 @@ const Slider = () => {
     <div className="relative">
       <div className="overflow-hidden flex flex-col justify-center items-center relative">
         <div
-          className="flex transition ease-out duration-500 h-[calc(75vw)] lg:h-[calc(42vw)] "
+          className="flex transition ease-out duration-500 h-[calc(75vw)] lg:h-[calc(45vw)] "
           style={{ transform: `translateX(${pos * 100}%)` }}
         >
           {slides.map((s, i) => {
