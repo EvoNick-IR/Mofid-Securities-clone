@@ -26,8 +26,8 @@ const EasyTrade = () => {
       <img src={easyTrade} alt="" className="block w-full" />
 
       <div className="isreg text-slate-300 mt-2 flex flex-col items-center gap-2 lg:gap-6 md:flex-row md:justify-between md:w-[95%] ">
-        <div className="md:w-4/5 lg:w-2/3">
-          <p className="text-center text-sm md:text-right lg:text-lg">
+        <div className="md:w-[70%] lg:w-2/3">
+          <p className="text-sm lg:text-lg">
             ایزی‌تریدر هم اکنون بیشترین تعداد کاربر را در میان سامانه‌های
             معاملاتی در بازار سرمایه کشور داراست. این نرم‌افزار با محیطی ساده،
             امکاناتی حرفه‌ای را در اختیار معامله‌گران قرار می‌دهد. ایزی‌تریدر در
