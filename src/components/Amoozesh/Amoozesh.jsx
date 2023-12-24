@@ -1,24 +1,21 @@
-import Classes from "./Classes";
+import { memo } from "react";
 
 const Amoozesh = () => {
   return (
-    <div className="flex flex-col w-full items-center gap-16">
-      <div className="flex flex-col gap-8 justify-center w-3/5">
-        <div className="text-slate-900 mx-auto ">
-          <h2 className="isbold text-3xl">آموزش مفید</h2>
-        </div>
-        <div className="text-slate-900 mx-auto">
-          <p>
-            سامانه آموزش کارگزاری مفید برای ارائه آموزش کاربردی و ساده به تمام
-            سرمایه‌گذاران ایران به صورت کاملا رایگان و فراگیر راه‌اندازی شده
-            است. کلاس‌های آنلاین روزانه، دوره‌های ویدیویی آموزشی و صدها مقاله در
-            حوزه‌های مختلف بازار سرمایه، از جمله امکانات آموزشی این سامانه است.
-          </p>
-        </div>
+    <div className=" text-right mt-12 w-[90%] md:text-center md:w-[80%] lg:w-[70%] xl:w-[60%] ">
+      <h2 className="text-xl mb-6 text-slate-900 isbold lg:text-2xl">
+        آموزش مفید
+      </h2>
+      <div className="text-slate-600 mx-auto text-sm">
+        <p className="lg:text-lg xl:text-xl ">
+          سامانه آموزش کارگزاری مفید برای ارائه آموزش کاربردی و ساده به تمام
+          سرمایه‌گذاران ایران به صورت کاملا رایگان و فراگیر راه‌اندازی شده است.
+          کلاس‌های آنلاین روزانه، دوره‌های ویدیویی آموزشی و صدها مقاله در
+          حوزه‌های مختلف بازار سرمایه، از جمله امکانات آموزشی این سامانه است.
+        </p>
       </div>
-      <Classes />
     </div>
   );
 };
 
-export default Amoozesh;
+export default memo(Amoozesh);
