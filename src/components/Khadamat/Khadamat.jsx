@@ -1,30 +1,31 @@
 import { Button_green, Button_nogreen, cardData } from "./services";
 import Card from "./Card";
+import { memo } from "react";
 
 const Khadamat = () => {
   return (
-    <div className=" isreg text-slate-300 text-base mt-10 lg:flex lg:flex-nowrap lg:w-full xl:grid xl:grid-cols-12 mx-auto">
-      <div className=" bg-red-500 flex flex-col w-2/5 gap-6 md:p-10 md:text-center xl:col-span-5 lg:text-right ">
-        <h2 className="ismed text-white text-lg lg:text-2xl">
+    <div className=" isreg text-slate-300 text-base mt-10 gap-y-14 lg:gap-x-14 flex flex-col lg:flex-row mx-auto xl:justify-center xl:items-center max-w-[1140px]">
+      <div className=" flex flex-col md:text-center lg:w-1/2 lg:text-right justify-center ">
+        <h2 className="isbold text-white text-xl lg:text-2xl ">
           خدمات معاملات آنلاین
         </h2>
-        <h3 className="lg:text-xl">معاملات اوراق بهادار</h3>
-        <p className="text-sm isreg text-justify mt-6 lg:text-base ">
+        <h3 className="lg:text-xl mt-3">معاملات اوراق بهادار</h3>
+        <p className="text-sm isreg text-justify md:text-center mt-10 lg:text-base mb-6 lg:text-right">
           اگر علاقه‌مند به فعالیت و خرید و فروش سهام در بازار سرمایه هستید،
           کارگزاری مفید با ارائه خدمات متنوع در این حوزه مانند سامانه‌های
           معاملاتی حرفه‌ای، اعتبار معاملاتی، تخفیف کارمزد، پشتیبانی ۲۴ ساعته و…
           شما را در مسیر رسیدن به اهداف مالی مد نظرتان یاری می‌کند.
         </p>
-        <div className="  gap-6 justify-center md:flex lg:block">
-          <div className="my-3">
+        <div className="md:flex gap-6 justify-center md-w-1/2 lg:justify-start">
+          <div className="my-3 ">
             <Button_green title="دریافت کد بورسی" />
           </div>
-          <div className="my-3">
+          <div className="my-3 ">
             <Button_nogreen title="اطلاعات بیشتر" />
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-2 gap-6 md:grid-cols-3 w-[90%] mx-auto text-center mt-20 lg:mt-6 lg:w-[55%] xl:col-span-6 ">
+      <div className="w-[90%] grid grid-cols-2 gap-6 md:grid-cols-3 mx-auto text-center md:w-2/3  lg:w-2/3 xl:w-2/4 ">
         {cardData.map((item) => {
           return (
             <div key={"card" + item.id} className="col-span-1 mx-auto">
@@ -37,4 +38,4 @@ const Khadamat = () => {
   );
 };
 
-export default Khadamat;
+export default memo(Khadamat);

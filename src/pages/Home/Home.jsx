@@ -23,7 +23,7 @@ const Home = () => {
         <Sabad />
         <Mazaya />
       </section>
-      <section className="w-full flex flex-col items-center p-4 lg:p-16  justify-center mt-12 bg-[#00243C] xl-w[1140px]">
+      <section className="flex flex-col items-center p-4 lg:p-16  justify-center mt-12 bg-[#00243C] ">
         <Khadamat />
         <EasyTrade />
       </section>
