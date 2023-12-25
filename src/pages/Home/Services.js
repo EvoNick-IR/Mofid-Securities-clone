@@ -4,18 +4,7 @@ import News from "/src/components/News/News";
 import Mazaya from "/src/components/Mazaya/Mazaya";
 import Sabad from "/src/components/Sabad-gardan/Sabad";
 import Khadamat from "/src/components/Khadamat/Khadamat";
-import Amoozesh from "/src/components/Amoozesh/Amoozesh";
+import Archive from "../../components/Amoozesh/Archive";
 import EasyTrade from "/src/components/EasyTrade/EasyTrade";
-import Classes from "/src/components/Amoozesh/Classes";
 
-export {
-  Slider,
-  Info,
-  News,
-  Mazaya,
-  Sabad,
-  Khadamat,
-  Amoozesh,
-  EasyTrade,
-  Classes,
-};
+export { Slider, Info, News, Mazaya, Sabad, Khadamat, EasyTrade, Archive };

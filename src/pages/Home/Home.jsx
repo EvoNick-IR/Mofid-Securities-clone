@@ -5,9 +5,8 @@ import {
   Sabad,
   Mazaya,
   Khadamat,
-  Amoozesh,
   EasyTrade,
-  Classes,
+  Archive,
 } from "./Services";
 
 const Home = () => {
@@ -28,9 +27,17 @@ const Home = () => {
         <Khadamat />
         <EasyTrade />
       </section>
-      <section className="flex flex-col items-center justify-center ">
-        <Amoozesh />
-        <Classes />
+      <section className="my-[64px] sm:my-[76px] lg:my-[96px] container mx-auto flex flex-col !mb-0 w-[90%] md:text-center">
+        <h2 className="mb-6 font-bold lg:text-xl text-slate-800">آموزش مفید</h2>
+        <p className="max-w-2xl mb-20 text-slate-600 text-sm lg:text-base md:text-center mx-auto">
+          سامانه آموزش کارگزاری مفید برای ارائه آموزش کاربردی و ساده به تمام
+          سرمایه‌گذاران ایران به صورت کاملا رایگان و فراگیر راه‌اندازی شده است.
+          کلاس‌های آنلاین روزانه، دوره‌های ویدیویی آموزشی و صدها مقاله در
+          حوزه‌های مختلف بازار سرمایه، از جمله امکانات آموزشی این سامانه است.
+        </p>
+      </section>
+      <section className="my-[64px] sm:my-[76px] lg:my-[96px] bg-[#F8F9FA] container mx-auto !p-8 !mt-0 bg-m-neutral-00 rounded-md grid grid-cols-12 gap-5 ">
+        <Archive />
       </section>
     </div>
   );
