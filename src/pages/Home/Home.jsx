@@ -16,7 +16,7 @@ const Home = () => {
       <div id="carousel" className="w-full m-auto  ">
         <Slider />
       </div>
-      <section className=" w-[90%]  flex flex-wrap  gap-24 mt-12 md:mt-1 md:w-2/3 mx-auto max-w-[1140px] xl:flex-nowrap xl:mt-32">
+      <section className=" w-[90%]  flex flex-wrap  gap-24 mt-12 md:mt-1 md:w-2/3 xl:w-auto mx-auto max-w-[1140px] xl:flex-nowrap xl:mt-32">
         <Info />
         <News />
       </section>
@@ -30,7 +30,7 @@ const Home = () => {
       </section>
       <section className="flex flex-col items-center justify-center ">
         <Amoozesh />
-        {/* <Classes /> */}
+        <Classes />
       </section>
     </div>
   );

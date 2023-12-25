@@ -1,17 +1,13 @@
 import { newsData, arrowLeft } from "./services";
 const News = () => {
   return (
-    <div className="w-full xl:w-5/12 grid grid-cols-1 gap-4 justify-start  relative ">
+    <div className="w-full xl:w-2/5 grid gap-4 justify-start  relative ">
       <h2 className="absolute -top-12 right-0 text-slate-400 text-lg">
         آخرین خبرها
       </h2>
       {newsData.map((news) => {
         return (
-          <a
-            href="_self"
-            className="w-full flex  col-span-1"
-            key={"news" + news.id}
-          >
+          <a href="_self" className="block flex " key={"news" + news.id}>
             <div className="flex gap-3  p-3 bg-[#F8F9FA] rounded-md w-full ">
               <div className="rounded-md w-[126px] md:w-[150px] shrink-0">
                 <img
